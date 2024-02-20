@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+    stages{
+        stage('Dev'){
+            steps{
+                git 'https://github.com/julietowah/inventory-management-system.git'
+            }
+        }
+        stage('UAT'){
+            steps{
+                git 'https://github.com/julietowah/inventory-management-system.git'
+            }
+            
+        }
+    }
+}
